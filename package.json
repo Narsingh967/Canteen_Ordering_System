@@ -1,0 +1,19 @@
+{
+  "name": "canteen-ordering-system",
+  "version": "1.0.0",
+  "description": "Canteen Ordering System with Inventory Locking and Auto-Cancellation",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd backend && npm run dev",
+    "client": "cd frontend && npm start",
+    "install-all": "npm install && cd backend && npm install && cd ../frontend && npm install",
+    "build": "cd frontend && npm run build"
+  },
+  "keywords": ["canteen", "ordering", "mern", "inventory"],
+  "author": "Infinite Locus",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+} 
